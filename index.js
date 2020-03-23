@@ -45,6 +45,8 @@ app.on('activate', () => {
 
 // use dbrjs in node
 
+dbrnode.BarcodeReader.productKeys = "PRODUCT-KEYS";
+
 // error! async can't be used on electron's main process??
 // (async()=>{
 //   let reader = await dbrnode.BarcodeReader.createInstance();
